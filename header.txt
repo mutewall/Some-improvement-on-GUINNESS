@@ -1,0 +1,33 @@
+import math
+import numpy as np
+from chainer.cuda import cupy
+import six
+import chainer
+from chainer import cuda
+from chainer import functions as F
+from chainer import links as L
+from chainer import initializers
+from chainer import Variable
+import pdb
+
+import sys
+sys.path.append('./')
+import link_binary_linear as BL
+import bst
+import link_binary_conv2d as BC
+import link_integer_conv2d as IC
+import link_residual_block as RB
+import link_dense_block as DB
+import link_dorefa_conv2d as DC
+import link_dorefa_linear as DL
+import dorefa_activation as da
+
+from function_binary_conv2d import func_convolution_2d
+from function_integer_conv2d import func_convolution_2d
+
+# for debuging of the batch normalization functions
+import link_batch_normalization as LBN
+
+class CNN(chainer.Chain):
+    def __init__(self):
+        super(CNN, self).__init__(
