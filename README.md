@@ -15,3 +15,5 @@ My work:
 ⑤　 Add the new parameters compression(quantization) methods called ‘DorefaNet’.
 
 'python gui2.py' to run the code.
+
+'dateset.pkl' needed to be generated according to 'class3_tag.txt'.
