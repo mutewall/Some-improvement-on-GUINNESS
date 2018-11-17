@@ -3,6 +3,7 @@
  This work is based on https://github.com/HirokiNakahara/GUINNESS. Please check this link for more information.
  
  My work:
+ 
  Add the ResNet and DenseNet modules which can be generated dynamically according to the users’ setting;
  
  Add the function to automatically calculate the number of parameters of the current selected neural network;
